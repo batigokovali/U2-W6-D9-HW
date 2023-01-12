@@ -1,0 +1,58 @@
+.album-counter.d-flex {
+    align-items: center;
+}
+
+body {
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(91,9,121,1) 50%, rgba(0,0,0,1) 100%)
+}
+
+.evh-guitar {
+    height: 10rem;
+    object-fit: cover;
+}
+
+.jumbotron {
+    animation: fadein 2s ease-in;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+
+.badge.badge-primary.position-absolute {
+    top:0;
+    left: 15px;
+    z-index: 1;
+}
+
+.invis {
+    transition: opacity 500ms linear;
+    opacity: 0;
+}
+
+.btn.btn-light.mb-5 {
+    transition: 500ms;
+}
+
+.btn.btn-light.mb-5:hover {
+    box-shadow: -1px -1px 20px 6px rgba(46,184,214,0.75);
+    background-color: rgba(46,184,214);
+    
+}
+
+.btn.btn-danger {
+    opacity: 0;
+    transition: 500ms;
+}
+
+tbody > tr:hover .btn.btn-danger{
+    opacity:1
+}
