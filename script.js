@@ -74,10 +74,11 @@ function addTrack () {
 
 function alertUser() {
     if (
-        document.getElementById("artist-name").value === "taylor"
-    ) {
+        document.getElementById("artist-name").value === "taylor" || 
+        document.getElementById("artist-name").value === "Taylor")
+             {
     document.getElementById("artist-name").value = "";
-    alert("Please listen to quality music")
+    alert("Really?")
     }
 }
 alertUser() 
